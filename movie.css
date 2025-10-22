@@ -1,0 +1,8 @@
+const url = "https://api.sampleapis.com/coffee/hot";
+fetch(url);
+console.log("test1")
+const response async = await fetch("https://api.sampleapis.com/coffee/hot");
+setTimeout(() => {
+    console.log(response);
+}, 200)
+console.log("test2")
