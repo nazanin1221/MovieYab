@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--custome css-->
     <link rel="stylesheet" href="movie.css">
+    <!--font awesoe icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>movieyab.com</title>
 </head>
 <body>
+    <div class="wrapper">
+        <!--logo-->
+        <div class="logo">
+            <div class="container">
+                <p>Movie<span>Yab.</span></p>
+            </div>
+        </div>
+        <!-- End of logo -->
+         <!--Search container-->
+         <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie Title ....." id="movie-search-box">
+
+                <div class="search-list" id="search-list">
+                    <!-- list here-->
+                     <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="./Picture/watermelon_poster.jpeg">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Twinkling Watermelon</h3>
+                            <p>2023</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+         </div>
+        <!-- end of search container-->
+
+        <!--result container-->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <!--movie information here-->
+                    <div class="movie-poster">
+                        <img src="./Picture/watermelon_poster.jpeg" alt="movie poster">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Twinkling Watermelon</h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">Year: 2023</li>
+                            <li class="retad">Ratings:5.0</li>
+                            <li class="released">Released: 04 November 2023</li>
+                        </ul>
+                        <p class="genre"><b>Genre:</b> Youth, Drama, Romance, Fantasy </p>
+                        <p class="writer"><b>Writer:</b> Jin Soo-wan, Cheon Ho-Jin, Yoon Do Hyun, Jin Tae-hyun</p>
+                        <p class="actors"><b>Actors:</b> Ryeoun Ha Eun-gyeol , Ha Yi-chan Choi Hyun-Wook ,Shin Eun-soo Cheong-ah ,Seol In-ah Se-kyung ,BONG JAE HYUN Eun-ho ...</p>
+                        <p class="plot"><b>Polt:</b> Ha Eun-gyul was born to deaf parents with an innate talent for music. After visiting a mysterious musical instrument store, he travels to a strange place. 
+                            Where he meets Lee Chan, Se Kyung, and Chung Ah…</p>
+                        <p class="language"><b>Language:</b> Korean</p>
+                        <p class="awards"><b><i class="fas fa-award"></i></b> Nothing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of result container-->
+    </div>
+    <!--movie serch api-->
     <script src="./movie.js"></script>
 </body>
 </html>
