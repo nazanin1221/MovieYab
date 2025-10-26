@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "year": 2010,
+    "rating": 8.8,
+    "poster": "./Picture/inception.jpg",
+    "plot": "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."
+  },
+  {
+    "id": 2,
+    "title": "Interstellar",
+    "year": 2014,
+    "rating": 8.6,
+    "poster": "./Picture/interstellar.jpg",
+    "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "rating": 9.0,
+    "poster": "./Picture/dark_knight.jpg",
+    "plot": "Batman faces his greatest psychological and physical tests when the criminal mastermind called the Joker wreaks havoc."
+  },
+  {
+    "id": 4,
+    "title": "Parasite",
+    "year": 2019,
+    "rating": 8.6,
+    "poster": "./Picture/parasite.jpg",
+    "plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan."
+  },
+  {
+    "id": 5,
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "rating": 9.3,
+    "poster": "./Picture/shawshank.jpg",
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+  },
+  {
+    "id": 6,
+    "title": "The Godfather",
+    "year": 1972,
+    "rating": 9.2,
+    "poster": "./Picture/godfather.jpg",
+    "plot": "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son."
+  },
+  {
+    "id": 7,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "rating": 8.9,
+    "poster": "./Picture/pulp_fiction.jpg",
+    "plot": "The lives of two mob hitmen, a boxer, a gangster's wife and a pair of diner bandits intertwine in tales of violence and redemption."
+  },
+  {
+    "id": 8,
+    "title": "Fight Club",
+    "year": 1999,
+    "rating": 8.8,
+    "poster": "./Picture/fight_club.jpg",
+    "plot": "An insomniac office worker and a devil-may-care soap maker form an underground fight club."
+  },
+  {
+    "id": 9,
+    "title": "Forrest Gump",
+    "year": 1994,
+    "rating": 8.8,
+    "poster": "./Picture/forrest_gump.jpg",
+    "plot": "The presidencies of Kennedy and Johnson, the Vietnam War, Watergate and other history unfold through the perspective of an Alabama man."
+  },
+  {
+    "id": 10,
+    "title": "The Matrix",
+    "year": 1999,
+    "rating": 8.7,
+    "poster": "./Picture/matrix.jpg",
+    "plot": "A computer hacker learns about the true nature of reality and his role in the war against its controllers."
+  },
+  {
+    "id": 11,
+    "title": "Whiplash",
+    "year": 2014,
+    "rating": 8.5,
+    "poster": "./Picture/whiplash.jpg",
+    "plot": "A promising young drummer enrolls at a cut-throat music conservatory where he clashes with an abusive instructor."
+  },
+  {
+    "id": 12,
+    "title": "La La Land",
+    "year": 2016,
+    "rating": 8.0,
+    "poster": "./Picture/la_la_land.jpg",
+    "plot": "While navigating their careers in Los Angeles, a pianist and an aspiring actress fall in love while attempting to reconcile their aspirations."
+  },
+  {
+    "id": 13,
+    "title": "The Social Network",
+    "year": 2010,
+    "rating": 7.7,
+    "poster": "./Picture/social_network.jpg",
+    "plot": "The founding of Facebook and the lawsuits that followed are dramatized."
+  },
+  {
+    "id": 14,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "rating": 8.8,
+    "poster": "./Picture/lotr_fellowship.jpg",
+    "plot": "A meek Hobbit sets out on a journey to destroy a powerful ring with a fellowship of allies."
+  },
+  {
+    "id": 15,
+    "title": "Gladiator",
+    "year": 2000,
+    "rating": 8.5,
+    "poster": "./Picture/gladiator.jpg",
+    "plot": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family."
+  },
+  {
+    "id": 16,
+    "title": "Avatar",
+    "year": 2009,
+    "rating": 7.8,
+    "poster": "./Picture/avatar.jpg",
+    "plot": "A paraplegic Marine is dispatched to the moon Pandora on a unique mission, becomes torn between following orders and protecting an alien civilization."
+  },
+  {
+    "id": 17,
+    "title": "Titanic",
+    "year": 1997,
+    "rating": 7.8,
+    "poster": "./Picture/titanic.jpg",
+    "plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
+  },
+  {
+    "id": 18,
+    "title": "The Prestige",
+    "year": 2006,
+    "rating": 8.5,
+    "poster": "./Picture/prestige.jpg",
+    "plot": "Two stage magicians engage in competitive one-upmanship in an attempt to create the ultimate stage illusion."
+  },
+  {
+    "id": 19,
+    "title": "The Departed",
+    "year": 2006,
+    "rating": 8.5,
+    "poster": "./Picture/departed.jpg",
+    "plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in Boston."
+  },
+  {
+    "id": 20,
+    "title": "Toy Story",
+    "year": 1995,
+    "rating": 8.3,
+    "poster": "./Picture/toy_story.jpg",
+    "plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's room."
+  }
+]
