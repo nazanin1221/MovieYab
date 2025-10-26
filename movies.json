@@ -158,5 +158,19 @@
     "rating": 8.3,
     "poster": "./Picture/toy_story.jpg",
     "plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's room."
-  }
+  },
+  {
+  "id": 21,
+  "title": "Twinkling Watermelon",
+  "year": 2023,
+  "rating": 5.0,
+  "released": "04 November 2023",
+  "poster": "./Picture/watermelon_poster.jpeg",
+  "genre": "Youth, Drama, Romance, Fantasy",
+  "writer": "Jin Soo-wan, Cheon Ho-Jin, Yoon Do Hyun, Jin Tae-hyun",
+  "actors": "Ryeoun Ha Eun-gyeol, Ha Yi-chan Choi Hyun-Wook, Shin Eun-soo Cheong-ah",
+  "plot": "Ha Eun-gyul was born to deaf parents with an innate talent for music. After visiting a mysterious musical instrument store, he travels to a strange place where he meets Lee Chan, Se Kyung, and Chung Ah.",
+  "language": "Korean",
+  "awards": "Nothing"
+}
 ]

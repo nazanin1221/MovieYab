@@ -12,8 +12,7 @@ function escapeHtml(str) {
     '<': '&lt;',
     '>': '&gt;',
     '"': '&quot;',
-    "'": '&#39;'
-  })[s]);
+    "'": "&#39;"  })[s]);
 }
 
 // debounce
@@ -28,8 +27,8 @@ function debounce(fn, delay = 250) {
 // fetch movies.json
 async function loadMovies() {
   try {
-    const res = await fetch('./movies.json'); 
-    if (!res.ok) throw new Error('Failed to load JSON');
+    const res = await fetch("./movies.json"); 
+    if (!res.ok) throw new Error("Failed to load JSON");
     movies = await res.json();
     console.log("✅ Movies Loaded:", movies.length); 
   } catch (err) {
@@ -38,7 +37,7 @@ async function loadMovies() {
 }
 
 // Run only when page is ready
-window.addEventListener('DOMContentLoaded', async () => {
+window.addEventListener("DOMContentLoaded", async () => {
   await loadMovies(); 
 });
 
@@ -47,12 +46,12 @@ loadMovies();
 // render search suggestions
 function renderSearchList(list) {
   if (!list || list.length === 0) {
-    searchList.innerHTML = '';
-    searchList.classList.add('hide-search-list');
+    searchList.innerHTML = "";
+    searchList.classList.add("hide-search-list");
     return;
   }
 
-  searchList.classList.remove('hide-search-list');
+  searchList.classList.remove("hide-search-list");
   searchList.innerHTML = list.map(m => `
     <div class="search-list-item" data-id="${m.id}">
       <div class="search-item-thumbnail">
@@ -66,15 +65,15 @@ function renderSearchList(list) {
   `).join('');
 
   // attach click listeners
-  document.querySelectorAll('.search-list-item').forEach(item => {
-    item.addEventListener('click', () => {
+  document.querySelectorAll(".search-list-item").forEach(item => {
+    item.addEventListener("click", () => {
       const id = item.dataset.id;
       const movie = movies.find(x => String(x.id) === String(id));
       if (movie) {
         displayMovie(movie);
-        searchList.innerHTML = '';
-        searchList.classList.add('hide-search-list');
-        searchBox.value = ''; // optionally clear search
+        searchList.innerHTML = "";
+        searchList.classList.add("hide-search-list");
+        searchBox.value = ""; // optionally clear search
       }
     });
   });
@@ -106,7 +105,7 @@ function displayMovie(m) {
 
 // search logic (title / plot / year)
 const onSearch = debounce((e) => {
-  const q = (e.target.value || '').trim().toLowerCase();
+  const q = (e.target.value || "").trim().toLowerCase();
   if (!q) {
     renderSearchList([]);
     return;
@@ -119,23 +118,20 @@ const onSearch = debounce((e) => {
   renderSearchList(filtered);
 }, 200);
 
-searchBox.addEventListener('input', onSearch);
+searchBox.addEventListener("input", onSearch);
 
 // close suggestions if click outside
-document.addEventListener('click', (e) => {
+document.addEventListener("click", (e) => {
   if (!searchList.contains(e.target) && e.target !== searchBox) {
-    searchList.innerHTML = '';
-    searchList.classList.add('hide-search-list');
+    searchList.innerHTML = "";
+    searchList.classList.add("hide-search-list");
   }
 });
 
 // Optional: show a default movie on load (first item)
-window.addEventListener('load', async () => {
+window.addEventListener("load", async () => {
   if (movies.length === 0) {
     // maybe fetch completed after load => wait a bit
     await new Promise(resolve => setTimeout(resolve, 100));
-  }
-  if (movies.length > 0) {
-    displayMovie(movies[0]);
   }
 });
