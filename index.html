@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./movie.css">
+  <link rel="stylesheet" href="./CSS/movie.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -90,6 +90,47 @@
       © 2024 MovieHub. All rights reserved. | Powered by Readdy
     </p>
   </section>
- <script src="movie.js"></script>
+ <!-- Login Modal -->
+<div id="loginModal"
+  class="fixed inset-0 hidden flex justify-center items-center bg-black/60 backdrop-blur-sm z-50">
+
+  <div
+    class="modalContent bg-[#151C2F] w-[420px] rounded-2xl p-8 relative shadow-xl scale-0 transition-transform duration-200">
+    
+    <h2 class="text-3xl font-bold mb-6 text-center">Login</h2>
+
+    <!-- Email -->
+    <div class="input-container mb-4">
+      <input id="emailInput" type="email"
+        class="w-full p-3 rounded-lg bg-[#0B1020] border-2 border-gray-600 focus:border-blue-500 outline-none text-white transition-all duration-300 focus:shadow-lg focus:shadow-blue-500/20"
+        placeholder="Enter your email" />
+    </div>
+
+    <!-- Password -->
+    <div class="input-container mb-2">
+      <div class="relative">
+        <input id="passwordInput" type="password"
+          class="w-full p-3 pr-10 rounded-lg bg-[#0B1020] border-2 border-gray-600 focus:border-blue-500 outline-none text-white transition-all duration-300 focus:shadow-lg focus:shadow-blue-500/20"
+          placeholder="Enter your password" />
+        <i id="togglePassword" class='bx bx-hide absolute right-3 top-3.5 text-xl cursor-pointer text-gray-400 hover:text-white transition-colors duration-200'></i>
+      </div>
+    </div>
+
+    <a href="#" class="text-blue-400 text-sm mt-2 inline-block hover:underline transition-colors duration-200">Forgot Password?</a>
+
+    <p id="loginError" class="text-red-400 text-sm mt-1 hidden">Please enter correct data!</p>
+
+    <button id="loginSubmit"
+      class="bg-blue-600 hover:bg-blue-700 w-full py-3 rounded-lg font-semibold text-lg mt-6 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 active:translate-y-0">
+      Login
+    </button>
+
+    <button id="closeModal"
+      class="absolute top-3 right-4 text-gray-400 hover:text-white text-2xl font-bold leading-none transition-colors duration-200">×</button>
+  </div>
+
+</div>
+
+ <script src="./js/movie.js"></script>
 </body>
 </html>
