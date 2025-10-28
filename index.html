@@ -1,76 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--custome css-->
-    <link rel="stylesheet" href="movie.css">
-    <!--font awesoe icons cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>movieyab.com</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./movie.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>MovieYab</title>
 </head>
-<body>
-    <div class="wrapper">
-        <!--logo-->
-        <div class="logo">
-            <div class="container">
-                <p>Movie<span>Yab.</span></p>
-            </div>
-        </div>
-        <!-- End of logo -->
-         <!--Search container-->
-         <div class="search-container">
-            <div class="search-element">
-                <h3>Search Movie:</h3>
-                <input type="text" class="form-control" placeholder="Search Movie Title ....." id="movie-search-box">
 
-                <div class="search-list" id="search-list">
-                    <!-- list here-->
-                    <!-- <div class="search-list-item">
-                      <div class="search-item-thumbnail">
-                           <img src="./Picture/watermelon_poster.jpeg" alt="movie poster">
-                        </div>
-                        <div class="search-item-info">
-                            <h3>Twinkling Watermelon</h3>
-                            <p>2023</p>
-                        </div>
-                     </div>-->
-                </div>
-            </div>
-         </div>
-        <!-- end of search container-->
+<body class="bg-[#0B1020] text-white font-sans">
 
-        <!--result container-->
-        <div class="container">
-            <div class="result-container">
-                <div class="result-grid" id="result-grid">
-                    <!--movie information here-->
-                    <!--<div class="movie-poster">
-                        <img src="./Picture/watermelon_poster.jpeg" alt="movie poster">
-                    </div>
-                    <div class="movie-info">
-                        <h3 class="movie-title">Twinkling Watermelon</h3>
-                        <ul class="movie-misc-info">
-                            <li class="year">Year: 2023</li>
-                            <li class="retad">Ratings:5.0</li>
-                            <li class="released">Released: 04 November 2023</li>
-                        </ul>
-                        <p class="genre"><b>Genre:</b> Youth, Drama, Romance, Fantasy </p>
-                        <p class="writer"><b>Writer:</b> Jin Soo-wan, Cheon Ho-Jin, Yoon Do Hyun, Jin Tae-hyun</p>
-                        <p class="actors"><b>Actors:</b> Ryeoun Ha Eun-gyeol , Ha Yi-chan Choi Hyun-Wook ,Shin Eun-soo Cheong-ah...</p>
-                        <p class="plot"><b>Polt:</b> Ha Eun-gyul was born to deaf parents with an innate talent for music. After visiting a mysterious musical instrument store, he travels to a strange place. 
-                            Where he meets Lee Chan, Se Kyung, and Chung Ah…</p>
-                        <p class="language"><b>Language:</b> Korean</p>
-                        <p class="awards"><b><i class="fas fa-award"></i></b> Nothing</p>
-                    </div>-->
-                </div>
-            </div>
-        </div> 
-        <!-- end of result container-->
+  <!-- Navbar -->
+  <nav class="w-full bg-[#0B1020] py-4 px-10 flex justify-between items-center fixed top-0 left-0 z-20 shadow-lg">
+    <h1 class="text-2xl font-bold text-white" style="font-family: Pacifico, serif;">Movieyab</h1>
+    <div class="space-x-4">
+      <button class="text-gray-300 hover:text-white font-medium">Login</button>
+      <button class="bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-lg font-semibold">Register</button>
     </div>
-    <!--movie serch api-->
-    <script src="./movie.js"></script>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen flex justify-center items-center text-center pt-16">
+    <div class="absolute inset-0 hero-bg"></div>
+
+    <div class="relative z-10">
+      <h1 class="text-6xl font-bold mb-6 text-blue-300">MovieYab</h1>
+      <p class="text-xl text-gray-200 mb-10">
+        Discover, search, and organize your favorite movies in one<br />
+        beautiful platform
+      </p>
+      <div class="space-x-4">
+        <button class="bg-blue-600 hover:bg-blue-700 py-3 px-6 rounded-lg font-semibold text-lg">
+          Register
+        </button>
+        <button class="border border-gray-400 hover:border-white py-3 px-6 rounded-lg font-semibold text-lg">
+          Login
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Section -->
+  <section class="bg-[#0B1020] py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Your Personal Movie Experience</h2>
+    <p class="text-gray-300 text-lg mb-16">
+      Explore thousands of movies, create your favorites list, and discover your<br />
+      next watch
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 md:px-32">
+
+      <!-- Card 1 -->
+      <div class="bg-[#151C2F] rounded-xl p-8 shadow-md transition hover:shadow-xl">
+      <div class=" circle-icon "><img src="icons/search.svg" class="w-6 h-6 text-blue-500 mx-auto "></div>
+        <h3 class="text-xl font-bold mb-2">Smart Search</h3>
+        <p class="text-gray-400">
+          Find any movie instantly with our powerful search engine and filtering options
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#151C2F] rounded-xl p-8 shadow-md transition hover:shadow-xl">
+        <div class=" circle-icon "><img src="icons/heart.png" class="w-6 h-6 text-blue-500 mx-auto mt-1"></div>
+        <h3 class="text-xl font-bold mb-2">Favorites List</h3>
+        <p class="text-gray-400">
+          Save your favorite movies and build your personal collection with one click
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#151C2F] rounded-xl p-8 shadow-md transition hover:shadow-xl">
+         <div class=" circle-icon "><img src="icons/info.png" class="w-6 h-6 text-blue-500 mx-auto"></div>
+        <h3 class="text-xl font-bold mb-2">Detailed Info</h3>
+        <p class="text-gray-400">
+          Get comprehensive movie details including cast, plot, ratings, and more
+        </p>
+      </div>
+
+    </div>
+
+    <p class="text-gray-400 mt-20">
+      © 2024 MovieHub. All rights reserved. | Powered by Readdy
+    </p>
+  </section>
+ <script src="movie.js"></script>
 </body>
 </html>
