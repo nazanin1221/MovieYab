@@ -8,6 +8,7 @@ const modalContent = document.getElementById('modalContent');
 const closeMovieModal = document.getElementById('closeMovieModal');
 const modalContentContainer = document.querySelector('.modalContent');
 
+
 // State
 let currentMovies = [];
 let showOnlyFavorites = false;
@@ -284,21 +285,7 @@ function closeMovieDetails() {
     movieModal.classList.add('hidden');
     modalContentContainer.classList.remove('hide');
   }, 200);
-}
-// Navbar Buttons 
-
-// back to page movies.html
-document.getElementById("backBtn").addEventListener("click", () => {
-  window.location.href = "movies.html";
-});
-
-document.getElementById("logoutBtn").addEventListener("click", () => {
-  localStorage.removeItem("user"); 
-  alert("You have been logged out!");
-  window.location.href = "index.html";
-});
-
-
+};
 
 // Make functions globally available for onclick handlers
 window.toggleFavorite = toggleFavorite;
