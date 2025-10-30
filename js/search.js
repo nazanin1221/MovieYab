@@ -285,18 +285,17 @@ function closeMovieDetails() {
     modalContentContainer.classList.remove('hide');
   }, 200);
 }
-// -------------------- Navbar Buttons --------------------
+// Navbar Buttons 
 
-// دکمه برگشت -> انتقال به movies.html
+// back to page movies.html
 document.getElementById("backBtn").addEventListener("click", () => {
   window.location.href = "movies.html";
 });
 
-// دکمه خروج
 document.getElementById("logoutBtn").addEventListener("click", () => {
-  localStorage.removeItem("user"); // فقط اطلاعات کاربر حذف می‌شه
+  localStorage.removeItem("user"); 
   alert("You have been logged out!");
-  window.location.href = "index.html"; // بازگشت به صفحه اصلی
+  window.location.href = "index.html";
 });
 
 
